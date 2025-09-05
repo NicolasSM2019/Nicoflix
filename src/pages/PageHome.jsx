@@ -4,19 +4,19 @@ import TituloPrincipal from "../components/TituloPrincipal"
 import Carrossel from "../components/Carrossel"
 
 
-function PageHome(){
+function PageHome() {
 
-    return(
+    return (
 
-<div className="page">
-<TopBar/>
-<TituloPrincipal/>
-<Carrossel/>
-
-
+        <div className="page">
+            <TopBar />
+            <TituloPrincipal />
+            <Carrossel />
 
 
-</div>
+
+
+        </div>
 
 
     );

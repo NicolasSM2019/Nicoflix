@@ -1,6 +1,7 @@
 import './ContaPagamento.css'
 import { SiMastercard } from "react-icons/si";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 function ContaPagamento() {
   return (
@@ -20,9 +21,9 @@ function ContaPagamento() {
         <div className='cartao'>
           <SiMastercard className='master' /> <span className='ponto'>••••</span> <span className='ponto' >••••</span> <span className='ponto'>••••</span> <span className='ponto'>2777</span>
         </div>
-        <div className='fim'>
+        <Link className='fim'>
           <span>Gerenciar assinatura</span> <IoIosArrowForward />
-        </div>
+        </Link>
       </div>
     </div>
   );

@@ -1,10 +1,13 @@
 import './BotaoVazado.css'
-
+import { Link } from 'react-router-dom';
 function BotaoVazado() {
   return (
-    <span className='botao-vazado'>
-      Gerenciar perfis
-    </span>
+    <Link className='botao-vazado' to='/gerenciarperfil'>
+      <span >
+        Gerenciar perfis
+      </span>
+    </Link>
+
   );
 }
 

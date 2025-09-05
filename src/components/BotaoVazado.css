@@ -1,10 +1,13 @@
-.botao-vazado{
+.botao-vazado {
     border: solid 1px #bababa;
 
     color: #bababa;
-
     padding: 8px 24px;   /* espaço entre a borda e o conteúdo */
-
-    font-size: 16px;      /* tamanho das letras */
+    font-size: 25px;      /* tamanho das letras */
     letter-spacing: 2px;    /* espaço entre letras */
 } 
+.botao-vazado:hover{
+     transform: scale(1.05); /* Aumenta um pouco o card ao passar o mouse */
+  color: #fff; /* Muda a cor do texto no hover */
+
+}

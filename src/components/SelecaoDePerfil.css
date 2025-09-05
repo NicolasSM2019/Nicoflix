@@ -12,10 +12,11 @@
 }
 
 .titulo-selecao{
-    font-size: 48px;
-    font-weight: 400;
-    /* border: solid 2px red; */
+    font-size: 50px;
+    font-weight: 600;
+  
     margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container-cards{

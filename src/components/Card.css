@@ -1,30 +1,61 @@
-
-.card{
-    /* border: solid 2px #ff0000; */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
- /* border: solid 1px #ffffff; */
-    width: 200px;
+.card_Principal_pai {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 
-.foto-perfil{
-    /* border: solid 1px #ffffff; */
-
-    border-radius: 8px;
-
-width: 500px;
-
-    display: flex;
-    margin-right: 800px;
-    
-
+.card_principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  margin: 0 20px;
+  text-decoration: none;
+  color: rgb(168, 163, 163);
+  transition: transform 0.2s ease-in-out;
 }
 
-.nome-usuario{
-    margin-top: 10px;
-    color: #999999;
-    font-size: 18px;
+.card_principal:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.foto-perfil-card {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.nome-usuario {
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+.adicionar_perfil_card_principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  /* border: solid 2px red;  */
+  border-radius: 180px;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 20px;
+  color: rgb(178, 178, 175);
+  background-color: #3b3a3a;
+}
+
+.adicionar_perfil_card_principal:hover {
+  transform: scale(1.05);
+  /* Aumenta um pouco o card ao passar o mouse */
+  color: #fff;
+  /* Muda a cor do texto no hover */
+
 }

@@ -8,6 +8,7 @@ import { TbRobotFace } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 
 
+
 function MenuLateral() {
   return (
     <div className='papai'>
@@ -16,30 +17,30 @@ function MenuLateral() {
         <FaArrowLeftLong />
         <span>Voltar á Netflix </span>
       </Link>
-      <div className='d2'>
+      <Link className='d2'>
         <GoHomeFill />
         <span> Virsão geral </span>
-      </div>
+      </Link>
 
-      <div className='d3'>
+      <Link className='d3'>
         <GoCreditCard />
         <span>Assinatura</span>
-      </div>
+      </Link>
 
-      <div className='d4'>
+      <Link className='d4'>
         <BsShieldCheck />
         <span>Segurança</span>
-      </div>
+      </Link>
 
-      <div className='d5'>
+      <Link className='d5'>
         <LuMonitorSmartphone />
         <span>Aparelhos</span>
-      </div>
+      </Link>
 
-      <div className='d6 '>
+      <Link className='d6 ' to='/gerenciarperfil'>
         <TbRobotFace />
         <span>Perfis</span>
-      </div>
+      </Link>
 
     </div>
   );

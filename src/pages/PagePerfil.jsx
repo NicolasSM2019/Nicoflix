@@ -1,10 +1,10 @@
 import './PagePerfil.css'
 import SelecaoDePerfil from "../components/SelecaoDePerfil"
 
-function PagePerfil(){
-  return(
+function PagePerfil() {
+  return (
     <div>
-      <SelecaoDePerfil/>
+      <SelecaoDePerfil />
     </div>
   );
 }

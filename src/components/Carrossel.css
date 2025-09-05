@@ -1,29 +1,110 @@
-.dad{
-     display: flex;
-     flex-direction: column;
-  align-items: center;
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 1600px;
+  margin: 40px auto;
   color: white;
-  font-size: 20px;
-  /* border: solid 2px red; */
-  
 }
-.nome{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    margin-right: 1080px;
-    margin-top: 90px;
-}
-.ims{
-   display: flex;
-  gap: 12px;  
-height: 220px;
 
+.carousel-title {
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
-.nome{
-    display: flex;
-    flex-direction: row;
-    font-weight: 800;
-    font-size: 30px;
-    
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-content {
+  display: flex;
+  gap: 12px;
+  padding: 20px 0;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.carousel-content::-webkit-scrollbar {
+  display: none; 
+}
+
+.carousel-item {
+  position: relative;
+  flex-shrink: 0; /* Impede que os itens encolham */
+  width: 250px; /* Largura fixa para cada item */
+  height: 140px; /* Altura fixa */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição suave */
+  cursor: pointer;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+}
+
+.carousel-item:hover {
+  transform: scale(1.25) translateY(-10%);
+  z-index: 20;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-item:hover ~ .carousel-item {
+  transform: translateX(60px);
+}
+
+.item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  padding: 40px 16px 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.carousel-item:hover .item-info {
+  opacity: 1;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Estilo das setas de navegação */
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 30; /* Fica acima de tudo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostra as setas quando o mouse está sobre o contêiner */
+.carousel-container:hover .arrow {
+  opacity: 1;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
 }

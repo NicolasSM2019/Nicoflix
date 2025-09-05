@@ -1,36 +1,30 @@
 .top-bar{
     display: flex;
     flex-direction: row;
-
     align-items: center;
 
 
 }
 .parte12{
-      display: flex;
-    flex-direction: row;
-    width: 100vw;
-    align-items: center;
-    gap: 25px; 
-    
-     font-size: 20px;
-    font-weight: 400;    
+ display: flex;
+ flex-direction: row;
+ margin: 20px;
+ font-size: 20px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 .logo{
     display: flex;
     flex-direction: row;
-    width: 200px;
-    
-    
-   
+    width: 180px;
+    margin-left: 55px;
     
 }
 
 .parte22{
     display: flex;
     flex-direction: row;
-    padding-right: 25px;
+    margin-left: 680px;
     font-size: 20px;
     font-weight: 400;
     color: aliceblue;    
@@ -42,4 +36,12 @@
 }
 .link{
     color: aliceblue;
+}
+.link:hover   {
+  /* border: 4px solid rgb(134, 130, 130); Adiciona uma borda branca ao redor da foto */
+  transform: scale(1.20);  /* Aumenta levemente o tamanho do card */
+}
+.parte22:hover  {
+  /* border: 4px solid rgb(134, 130, 130); Adiciona uma borda branca ao redor da foto */
+  transform: scale(1.20);  /* Aumenta levemente o tamanho do card */
 }
